@@ -1,8 +1,9 @@
 package implementation;
 
+import compositePatternPackage.ColoringMedium;
 
 //concrete
-public class AcryllicColor extends Color
+public class AcryllicColor extends ColoringMedium
 {
 	public AcryllicColor(Shade shade)
 	{

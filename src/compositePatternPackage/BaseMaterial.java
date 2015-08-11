@@ -1,5 +1,4 @@
 package compositePatternPackage;
-
 import implementation.ExpertiseLevel;
 
 public abstract class BaseMaterial extends KitLeaf

@@ -1,14 +1,10 @@
 package abstractFactoryPattern;
 
-import compositePatternPackage.BaseMaterial;
-import compositePatternPackage.Canvas;
-
-import implementation.AcryllicColor;
-import implementation.Color;
-import implementation.Palette;
-import implementation.ProductFactory;
-import implementation.Shade;
-import implementation.Tools;
+import compositePatternPackage.*;
+import implementation.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 
 public class AcryllicPaintingFactory implements ProductFactory
@@ -16,17 +12,24 @@ public class AcryllicPaintingFactory implements ProductFactory
 
 	public BaseMaterial createBase() 
 	{
-		return new Canvas();
+            return new Canvas();
 	}
 
-	public Tools createTools() {
-		// TODO Auto-generated method stub
-		return new Palette();
+	public Tools createTools() 
+        {
+            return new Palette();
 	}
 
-	public Color createColor(Shade shade) 
+	public ColoringMedium createColoringMedium(Shade shade) 
 	{
-		return new AcryllicColor(shade);
+            return new AcryllicColor(shade);
 	}
+        
+        public Brush createBrush(BrushTip tip)
+        {
+            return
+        }
+        
+        
 	
 }

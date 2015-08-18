@@ -1,7 +1,8 @@
 package implementation;
 
+import compositePatternPackage.Kit;
+
 public interface KitMaker 
 {
-	public void constructKit();
-	
+	public Kit makeKit();
 }
